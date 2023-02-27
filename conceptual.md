@@ -3,6 +3,7 @@
 Answer the following questions below:
 
 - What are important differences between Python and JavaScript?
+
     Generally speaking, JavaScript is the language for the web/browser
 
     In terms of specific differences between the two languages, 
@@ -10,6 +11,14 @@ Answer the following questions below:
 - Given a dictionary like ``{"a": 1, "b": 2}``: , list two ways you
   can try to get a missing key (like "c") *without* your programming
   crashing.
+
+    dictionary = {"a": 1, "b": 2}
+    dictionary.get('c', 0) # 0
+    'c' in dictionary # False
+    try:
+        dictionary['c']
+    except KeyError:
+        print('key missing') # key missing
 
 - What is a unit test?
 

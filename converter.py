@@ -8,7 +8,7 @@ def get_currency_codes():
     return set(data['symbols'].keys())
 
 
-def check_valid_inputs(currency_from, currency_to, amount):
+def are_valid_inputs(currency_from, currency_to, amount):
     if not amount.replace('.', '').isnumeric() or float(amount) <= 0:
         return False
 
